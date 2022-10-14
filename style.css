@@ -2,6 +2,19 @@ body {
     background-color:deepskyblue
 }
 
+.wrapper {
+    width:75%;
+    margin: 0 auto;
+    background-color:rgb(80, 191, 235);
+    display: grid;
+    grid-template-columns: 2fr ;
+    grid-template-rows: 80px 50  auto 50px;
+    grid-gap: 10px;
+/*All koden inom klammorna för wrapper kommer ändra de attribut och egenskaper för den kod som blivit klassat med wrapper*/
+}
+
+
+
 h1 {
     text-align:center;
     font-family:"Brush Script MT", Cursive;
@@ -16,11 +29,22 @@ h2 {
 
 }
 
-nav {
-    text-align:center;
-    border-style: solid;
-    font-size:25px;
+nav>ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
 
+nav li{
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-right: 10px;
+    line-height: 2;
 }
 
 h3 {
@@ -30,4 +54,18 @@ h3 {
 
 p {
     text-align:center;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+main{
+    grid-area: main;
+    padding: 0 10px 0 10px;
+}
+
+#sida2 main{
+    display: grid;
+    
 }
