@@ -5,14 +5,13 @@ body {
 .wrapper {
     width:75%;
     margin: 0 auto;
-    background-color:rgb(80, 191, 235);
+    background-color:lightblue;
     display: grid;
     grid-template-columns: 2fr ;
     grid-template-rows: 80px 50  auto 50px;
     grid-gap: 10px;
 /*All koden inom klammorna för wrapper kommer ändra de attribut och egenskaper för den kod som blivit klassat med wrapper*/
 }
-
 
 
 h1 {
@@ -69,3 +68,5 @@ main{
     display: grid;
     
 }
+
+
