@@ -1,21 +1,22 @@
 body {
-    background-color:deepskyblue
+    background-color:deepskyblue /*Den här koden ändrar bakgrundsfärgen för alla sidor*/
 }
 
 .wrapper {
     width:75%;
+    height:50%;
     margin: 0 auto;
-    background-color:lightblue;
+    background-color:mediumslateblue;
     display: grid;
     grid-template-columns: 2fr ;
-    grid-template-rows: 80px 50  auto 50px;
+    grid-template-rows: 80px 50px  auto 50px;
     grid-gap: 10px;
-/*All koden inom klammorna för wrapper kommer ändra de attribut och egenskaper för den kod som blivit klassat med wrapper*/
+/*All koden inom klammorna för wrapper kommer ändra de attribut för den kod som blivit klassat med wrapper/blivit skriven inom <div> och </div> då div har blivit klassad med wrapper namnet*/
 }
 
 
 h1 {
-    text-align:center;
+    text-align:center;  /*Det här kommer centrera all text i den första h kolumnen*/
     font-family:"Brush Script MT", Cursive;
     text-shadow:3px 3px;
     font-size:50px
@@ -28,7 +29,7 @@ h2 {
 
 }
 
-nav>ul {
+nav>ul {   /*Den här koden visar att nav är som ett större eller mäktigare element än ul, som en förälder ungefär*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0;
@@ -44,7 +45,7 @@ nav li{
     border-radius: 10px;
     margin-right: 10px;
     line-height: 2;
-}
+} /*Koden i nav li kolumnen kommer få de attribut som skrivits inom klammorna*/
 
 h3 {
     font-size:35px;
@@ -56,17 +57,5 @@ p {
 }
 
 table, th, td{
-    border:1px solid black;
+    border:1px solid black;   /*Det här ger alla tabeller på webbsidan en kant som är 1 pixel bred, i detta fallet var det bara en tabell på webbsidan men om man har flera måste man klassa de olika för att kunna ändra de individuellt*/
 }
-
-main{
-    grid-area: main;
-    padding: 0 10px 0 10px;
-}
-
-#sida2 main{
-    display: grid;
-    
-}
-
-
