@@ -6,11 +6,12 @@ body {
     width:75%;
     height:50%;
     margin: 0 auto;
-    background-color:mediumslateblue;
+    background-color:rgb(98, 218, 218);
     display: grid;
     grid-template-columns: 2fr ;
     grid-template-rows: 80px 50px  auto 50px;
     grid-gap: 10px;
+    line-height: 0.80
 /*All koden inom klammorna för wrapper kommer ändra de attribut för den kod som blivit klassat med wrapper/blivit skriven inom <div> och </div> då div har blivit klassad med wrapper namnet*/
 }
 
@@ -25,7 +26,7 @@ h1 {
 
 h2 {
     font-size:50px;
-    color:darkblue
+    color:blue;
 
 }
 
@@ -57,5 +58,10 @@ p {
 }
 
 table, th, td{
-    border:1px solid black;   /*Det här ger alla tabeller på webbsidan en kant som är 1 pixel bred, i detta fallet var det bara en tabell på webbsidan men om man har flera måste man klassa de olika för att kunna ändra de individuellt*/
+    border:1px solid black;  /*Det här ger alla tabeller på webbsidan en kant och centrerar all text i varje ruta*/
+    text-align: Center;        
 }
+tr:nth-child(odd) {
+    background-color:cornsilk;
+}
+
