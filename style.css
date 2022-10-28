@@ -26,7 +26,7 @@ h1 {
 
 h2 {
     font-size:50px;
-    color:blue;
+    color:blue;   /*Denna koden ändrar storleken och färgen på den andra h sektionen.*/
 
 }
 
@@ -46,7 +46,7 @@ nav li{
     border-radius: 10px;
     margin-right: 10px;
     line-height: 2;
-} /*Koden i nav li kolumnen kommer få de attribut som skrivits inom klammorna*/
+} /*Koden i "nav li" kolumnen kommer få de attribut som skrivits inom klammorna*/
 
 h3 {
     font-size:35px;
@@ -62,6 +62,6 @@ table, th, td{
     text-align: Center;        
 }
 tr:nth-child(odd) {
-    background-color:cornsilk;
-}
+    background-color:cornsilk;   /*Det här kommer göra att varannan rad i tabellen kommer vara i en annan färg, i detta fall kommer det bli mellan vit och ljusblå och eftersom att tabellen har tre rader komemr det bli två vita rader och en blå. Det kommer också börja på den första raden eftersom att den skulle börja på ett ojämnt radnummer. */
+}    
 
